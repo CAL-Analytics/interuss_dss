@@ -16,8 +16,6 @@ resource "aws_eks_cluster" "kubernetes_cluster" {
     aws_iam_role_policy_attachment.dss-cluster-service,
     aws_internet_gateway.dss
   ]
-
-  version = "1.24"
 }
 
 resource "aws_eks_node_group" "eks_node_group" {
